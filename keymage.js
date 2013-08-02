@@ -305,6 +305,11 @@ define(function() {
         return scope;
     };
 
+    keymage.clear = function(){
+        currentScope = '';
+        allChains = {};
+    };
+
     keymage.version = VERSION;
 
     window.addEventListener('keydown', dispatch, false);
